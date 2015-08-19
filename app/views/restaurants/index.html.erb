@@ -5,6 +5,7 @@
     <div class="col-xs-12 text-center">
       <h1>La cuilliere</h1>
       <p>Voici notre liste de restaurants</p>
+      <%= link_to "Add a new Restaurant to our list",  new_restaurant_path, class: "btn btn-success" %>
     </div>
 
     <% @restaurants.each do |restaurant| %>

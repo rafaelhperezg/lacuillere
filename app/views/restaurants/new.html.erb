@@ -1,7 +1,15 @@
-<%= simple_form_for @restaurant do |f| %>
-  <%= f.input :name %>
-  <%= f.input :phone_number %>
-  <%= f.input :address %>
-  <%= f.input :category, collection: CATEGORIES, prompt: "Category" %>
-  <%= f.button :submit %>
-<% end %>
+<div class="container">
+  <div class="row">
+    <div class="col-xs-6 col-xs-offset-3">
+      <hr>
+      <h2>Please enter information of the restaurant you want to create</h2>
+      <%= simple_form_for @restaurant do |f| %>
+        <%= f.input :name %>
+        <%= f.input :phone_number %>
+        <%= f.input :address %>
+        <%= f.input :category, collection: CATEGORIES, prompt: "Category" %>
+        <%= f.button :submit %>
+      <% end %>
+    </div>
+  </div>
+</div>
