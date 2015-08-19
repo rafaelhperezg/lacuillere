@@ -1,10 +1,21 @@
-<% @restaurants.each do |restaurant| %>
-  <div>
-    <h2><%= restaurant.name %></h2>
-    <p><%= restaurant.category %></p>
-    <p><%= restaurant.address %></p>
-    <p><%= restaurant.phone_number %></p>
-    <%= link_to " Show Restaurant", restaurant_path(restaurant), class: "btn btn-primary" %>
-  </div>
 
-<% end %>
+<div class="container">
+  <div class="row">
+
+    <div class="col-xs-12 text-center">
+      <h1>La cuilliere</h1>
+      <p>Voici notre liste de restaurants</p>
+    </div>
+
+    <% @restaurants.each do |restaurant| %>
+      <div class="col-sm-4">
+        <h2><%= restaurant.name %></h2>
+        <p><%= restaurant.category %></p>
+        <p><%= restaurant.address %></p>
+        <p><%= restaurant.phone_number %></p>
+        <%= link_to " Show Restaurant", restaurant_path(restaurant), class: "btn btn-primary" %>
+      </div>
+    <% end %>
+
+  </div>
+</div>
