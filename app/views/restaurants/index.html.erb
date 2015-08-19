@@ -4,6 +4,7 @@
     <p><%= restaurant.category %></p>
     <p><%= restaurant.address %></p>
     <p><%= restaurant.phone_number %></p>
+    <%= link_to " Show Restaurant", restaurant_path(restaurant), class: "btn btn-primary" %>
   </div>
 
 <% end %>

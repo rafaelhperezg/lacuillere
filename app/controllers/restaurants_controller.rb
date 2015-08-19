@@ -13,6 +13,10 @@ class RestaurantsController < ApplicationController
     redirect_to restaurants_path
   end
 
+  def show
+    @restaurant = Restaurant.find(params[:id])  #I receive the params when the user click on the link Show task
+  end
+
 private
 
 def restaurant_params
