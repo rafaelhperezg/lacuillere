@@ -11,4 +11,17 @@
 
     </div>
   </div>
+
+  <div class="row">
+    <!-- <div class="col-xs-12 text-center"> -->
+
+    <% @reviews.each do |review| %>
+      <div class="col-xs-12 text-center">
+        <p><%= review.content %></p>
+        <p><%= review.rating %></p>
+      </div>
+    <% end %>
+
+  </div>
+
 </div>
